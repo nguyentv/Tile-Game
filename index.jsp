@@ -1,28 +1,35 @@
 <%-- 
-    Document   : PA#1 Part 1
     Created on : Jan 29, 2013, 9:28:41 PM
     Author     : christinachoe
+    Tiffany's Note: Hey, I am just going to clean up the format of your code and comment on some things.
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-    <!DOCTYPE html>
+
 <html>
   <head>
-    <title></title>
+    <title>Christina Choe's Tile Game</title> // LOL, how come you didn't title your program Christina?
+
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
     <style>
-      table {
-        margin-left: auto;
-        margin-right: auto;
-      }
-      td {
-        border: 1px solid black;
-        width: 50px;
-        height: 50px;
-        background: white;
-        text-align: center;
-      }
+
+      table 
+        {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+      td 
+        {
+        
+            border: 1px solid black;
+            width: 50px;
+            height: 50px;
+            background: white;
+            text-align: center;
+        }
     </style>
     
     <script type="text/javascript">
@@ -49,6 +56,11 @@
       function getTile(row, col) {
         return document.getElementById('b'+row+col);
       }
+        
+      /*
+       * I think this is where your code is returning the pop-up message. 
+       */
+    
 
       /*
        * Display the tiles as defined in the array.
@@ -116,6 +128,7 @@
        *
        */
       function randomize() {
+
           //declarations
           var track = 0;
           var rRand;
@@ -148,6 +161,7 @@
     </script>
 
   </head>
+
   <body>
     <p>
        The goal of this game is to put the tiles in order, from 1 to 15 (starting at upper left).
